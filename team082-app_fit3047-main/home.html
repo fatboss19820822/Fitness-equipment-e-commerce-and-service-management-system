@@ -1,0 +1,142 @@
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>Grayscale - Start Bootstrap Theme</title>
+    <link rel="icon" type="image/x-icon" href="webroot/img/favicon.ico"/>
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"/>
+    <?= $this->fetch('meta') ?>
+    <?= $this->fetch('css') ?>
+    <?= $this->fetch('script') ?>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+
+<header class="masthead">
+    <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+        <div class="d-flex justify-content-center">
+            <div class="text-center">
+                <!--                <h1 class="mx-auto my-0 text-uppercase">--><?php //= $this->ContentBlock->text('website-title'); ?><!--</h1>-->
+                <h1 class="display-4 text-uppercase text-white"><?= $this->ContentBlock->text('website-title'); ?></h1>
+                <h2 class="text-white-50 mx-auto mt-2 mb-5">
+                    Your One-Stop Shop for Gym Equipment, Installation & Repairs
+                </h2>
+
+                <a class="btn btn-primary" href="#buy-equipment">VIEW PRODUCTS/SERVICES</a>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="about-section text-center" id="about">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8" style="color: white">
+                <h2 class="text-white mb-4">About</h2>
+                <p style="white;"><?= $this->ContentBlock->html('about-content'); ?></p>
+            </div>
+        </div>
+        <img class="img-fluid" src="webroot/img/ipad.png" alt="..."/>
+    </div>
+</section>
+
+
+<section class="projects-section bg-light" id="projects">
+    <div class="container px-4 px-lg-5">
+        <!-- Featured Project Row-->
+        <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+            <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="webroot/img/bg-masthead.jpg"
+                                                alt="..."/></div>
+            <div class="col-xl-4 col-lg-5">
+                <div id="buy-equipment" class="featured-text text-center text-lg-left">
+                    <h4><?= $this->Html->link('Buy Equipment', ['controller' => 'Products', 'action' => 'public_index']) ?></h4>
+                    <p class="text-black-50 mb-0">Browse through our latest equipments</p>
+                </div>
+            </div>
+        </div>
+        <!-- Products One Row-->
+        <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+            <div class="col-lg-6"><img class="img-fluid" src="webroot/img/demo-image-01.jpg" alt="..."/></div>
+            <div class="col-lg-6">
+                <div class="bg-black text-center h-100 project">
+                    <div class="d-flex h-100">
+                        <div class="project-text w-100 my-auto text-center text-lg-left">
+                            <h4><?= $this->Html->link('Repair Equipment', ['controller' => 'RepairRequests', 'action' => 'add']) ?></h4>
+                            <p class="mb-0 text-white-50">Need help fixings?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Products Two Row-->
+        <div class="row gx-0 justify-content-center">
+            <div class="col-lg-6"><img class="img-fluid" src="webroot/img/demo-image-02.jpg" alt="..."/></div>
+            <div class="col-lg-6 order-lg-first">
+                <div class="bg-black text-center h-100 project">
+                    <div class="d-flex h-100">
+                        <div class="project-text w-100 my-auto text-center text-lg-right">
+                            <h4><?= $this->Html->link('Install Equipment', ['controller' => 'InstallEquipmentRequests', 'action' => 'add']) ?></h4>
+                            <p class="mb-0 text-white-50">Need help installing?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="testimonials-section bg-light" id="testimonials">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+            <div class="col-lg-12 text-center">
+                <h2 class="text-dark mb-4">Customer Testimonials</h2>
+                <p class="text-black-50 mb-4">Here's what some of our satisfied customers have to say:</p>
+                <div class="carousel slide" id="testimonialCarousel" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Testimonial 1 -->
+                        <div class="carousel-item active">
+                            <div class="testimonial-item">
+                                <p class="testimonial-text"><?= $this->ContentBlock->html('testimonials-1'); ?></p>
+                                <p class="testimonial-author">- Jessica, Gym Owner</p>
+                            </div>
+                        </div>
+                        <!-- Testimonial 2 -->
+                        <div class="carousel-item">
+                            <div class="testimonial-item">
+                                <p class="testimonial-text"><?= $this->ContentBlock->html('testimonials-2'); ?></p>
+                                <p class="testimonial-author">- Michael, Fitness Trainer</p>
+                            </div>
+                        </div>
+                        <!-- Testimonial 3 -->
+                        <div class="carousel-item">
+                            <div class="testimonial-item">
+                                <p class="testimonial-text"><?= $this->ContentBlock->html('testimonials-3'); ?></p>
+                                <p class="testimonial-author">- Sarah, Gym Member</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carousel Controls -->
+                    <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+

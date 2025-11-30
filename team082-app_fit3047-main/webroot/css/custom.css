@@ -1,0 +1,101 @@
+/* Ensure full height layout */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.dark-form {
+    background: linear-gradient(to bottom right, #1c1c1c, #121212);
+    color: #f0f0f0;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Repair form card */
+.dark-form .contact-form {
+    background-color: rgba(40, 40, 40, 0.95);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 700px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Table styles (if needed) */
+.dark-form table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: auto;
+}
+
+.dark-form th,
+.dark-form td {
+    padding: 12px;
+    border: 1px solid #444;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+.dark-form td:nth-child(3) {
+    max-width: 300px;
+    overflow-wrap: break-word;
+}
+
+/* Buttons */
+.btn-turquoise.button {
+    background-color: #40e0d0;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-turquoise.button:hover {
+    background-color: #37c3b3;
+    transform: scale(1.05);
+}
+
+/* Form control styling */
+.form-dark {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+.form-dark::placeholder {
+    color: #bbb;
+}
+
+.form-dark:focus {
+    background-color: #444;
+    border-color: #40e0d0;
+    box-shadow: 0 0 0 0.25rem rgba(64, 224, 208, 0.25);
+}
+
+/* Alternate light button (if needed) */
+.btn-light {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    color: white;
+}
+
+.btn-light:hover {
+    background-color: #138496;
+    border-color: #117a8b;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+

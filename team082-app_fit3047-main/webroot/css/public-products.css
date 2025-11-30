@@ -1,0 +1,107 @@
+.product-card {
+    background: #f8f9fa; /* light card like Furni */
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.product-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.product-image-container {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.product-image {
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.product-details {
+    margin-top: 20px;
+}
+
+.product-name {
+    font-size: 1.1rem;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.product-price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+/* Simple "+" button */
+.icon-plus {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #40e0d0;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.icon-plus:hover {
+    background: #37c3b3;
+}
+
+/* PRODUCTS SECTION BACKGROUND */
+.products-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)), url('/img/gym-background.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 60px 0;
+}
+
+/* CARD FROSTED STYLE */
+.card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* BUTTON STYLE */
+.btn-primary.rounded-circle {
+    background-color: #5ba89d;
+    border-color: #5ba89d;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.btn-primary.rounded-circle:hover {
+    background-color: #4c9189;
+    border-color: #4c9189;
+}
